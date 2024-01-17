@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EXTRAS Y DESCUENTOS</title>
+    <link rel="stylesheet" href="./estilos/estiloLogin.css">
+    <link href="https://file.myfontastic.com/stde5kabUSg4RMpzDFyEVG/icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="banda">
+        <div class="img1">
+           
+        </div>
+        <p class="texto-banda">Milka Chocolate</p>
+        <div class="img2">
+            
+        </div>
+    </div>
+   <form action="extraper.php" method="post" class="f1">
+    <h2>EXTRAS</h2>
+    <input type="text" name="id" id="id" placeholder="&#128272;No_empleado">
+    <input type="number" name="horas" id="horas" placeholder="Horas Extras">
+    <input type="number" name="vacaciones" id="vacaciones" placeholder="Vacaciones">
+    <b><Label for="entidad">Aguinaldo:</Label></b>
+    <select class="entrada" name="aguinaldo" id="aguinaldo">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select><br>
+    <b><Label for="entidad">Prima Vacacional:</Label></b>
+    <select class="entrada" name="prima" id="prima">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select><br> 
+    <b><Label for="entidad">Bono Puntualidad:</Label></b>
+    <select class="entrada" name="bono" id="bono">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select><br> 
+    <b><Label for="entidad">Vales Despensa:</Label></b>
+    <select class="entrada" name="vales" id="vales">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select><br> 
+    <b><Label for="entidad">Fondo Ahorro:</Label></b>
+    <select class="entrada" name="fondo" id="fondo">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select><br><br>
+    <h2>DESCUENTOS</h2>
+    <b><Label for="entidad">ISR:</Label></b>
+    <select class="entrada" name="isr" id="isr">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select> <br>
+    <b><Label for="entidad">IMSS:</Label></b>
+    <select class="entrada" name="imss" id="imss">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select> <br>
+    <b><Label for="entidad">INFONAVIT:</Label></b>
+    <select class="entrada" name="infonavit" id="infonavit">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select> <br>
+    <b><Label for="entidad">Pago Seguridad Social:</Label></b>
+    <select class="entrada" name="seguridad" id="seguridad">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select> <br>
+    <b><Label for="entidad">Fondo Retiro:</Label></b>
+    <select class="entrada" name="retiro" id="retiro">
+         <option>----(SI/NO)----</option>
+         <option value = "SI"> Si </option>
+         <option value = "NO"> No </option>
+    </select> <br>
+    <input type="submit" value="AGREGAR">
+    </form>
+    <!--<div class="frase">
+        <b><p class="parrafo">&copy;Ingenieria en Sistemas Computacionales UAA 2021 - Todos los derechos reservados</p></b>
+    </div>-->
+   <!-- <div class="banda2">
+    </div>-->
+</body>
+</html>

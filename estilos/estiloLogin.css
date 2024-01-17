@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-header{
+    background: #8267AD;
+    color:white;
+    position: fixed;
+    top:0;
+    margin: 0px auto;
+    width: 100%;
+    padding: 15px 20px;
+
+}
+
+/*********************************BANDA MORADA CON VACAS**********************************/
+.banda{
+    width: 100%;
+    height: 90px;
+    background-color: #8267AD;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    font-size: 50px;
+    font-weight: 550;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 3.89%;
+    
+}
+.banda2{
+    width: 100%;
+    height: 90px;
+    background-color: #8267AD;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    /*align-items: center;*/
+    bottom: 0;
+    position: fixed;
+}
+.banda .img1{
+     background-image: url("../imagenes/vaca.png");
+    background-size: 100% 100%;
+    width: 110px;
+    height: 80px;
+    justify-content: center;
+    
+}
+
+.banda .img2{
+     background-image: url("../imagenes/vaca.png");
+    background-size: 100% 100%;
+    width: 110px;
+    height: 80px;
+    justify-content: center;
+}
+
+.banda .texto-banda{
+    
+    margin-top: 5px;
+    font-size: 49px;
+}
+
+/*****************************************************************************************/
+body{
+    background: #ffffff;
+    /*max-height: 100vh;*/
+    width: 100%;
+    
+}
+form{
+    margin: auto;
+    width: 30%;
+/*    max-width: 500px;*/
+    background: #c0c0c0;
+    color:#8267AD;
+    text-align: center;
+    padding: 30px;
+    /*border: 5px solid #9370db;*/
+    padding: 40px 30px;
+    box-sizing: border-box;
+   /* margin-top: 5%;*/
+    border-radius: 30px;
+    box-shadow:#8267AD 10px 15px 15px inset;
+    
+}
+input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+    border: 2px solid #8267AD;
+    border-radius: 30px;
+    
+}
+h2{
+    font-size: 25px;
+}
+
+input[type="submit"]{
+    background: linear-gradient(#ffffff,#9370db);
+    border: 0;
+    color: black;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    /*border: 3px solid #9370db;*/
+}
+input[type="submit"]:hover{
+    opacity: 1;
+    
+}
+input[type="submit"]:active{
+    transform:scale(.95);
+    
+    
+}
+@media(max-width:768px){
+    form{
+        width: 75%;
+    }
+}
+@media(max-width:480px){
+    form{
+        width: 95%;
+    }
+}
+
+.footer{
+    background: #8267AD;
+    color:#421071;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 90px;
+    color: white;
+    
+}
+.footer .social [class^="icon-"]{
+    display: inline-block;
+    color: #421071;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    background: #FFC1FB;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.footer .social [class^="icon-"]:hover{
+    transition: all 1s ease .1s;
+    transform: scale(2) rotate3d(0,1,0,720deg);
+    color: #CB54FF;
+    background: rgba(0,0,0,0.5);
+    box-shadow: #FFC1FB 3px 3px 3px inset;
+    
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: purple;
+    color:white;
+    border-color: deeppink;
+}
+@media(max-width:600px){
+    .footer{
+        width: 90%;
+    }
+}
+@media(max-width:310px){
+    .footer{
+        display: none;
+    }
+}

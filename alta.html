@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Empleados</title>
+    <link rel="stylesheet" type="text/css" href="./estilos/estiloAlta.css">
+    
+</head>
+<body><!-- caja grande -->
+ <header id="main-header">
+     
+     <a href=" "><img align="left" src="./imagenes/milka.png" alt="logo1" class="img"></a><h1 >CHOCOLATE MILKA</h1>
+ </header>
+      
+<!-- 
+DATOS DE LOS EMPLEADOS          
+-->
+    
+    
+        <form action="procesarAltas.php" method="post" class="contact_form">
+        <h2> DATOS GENERALES </h2>
+            
+      
+              
+         <b><label for="nombre">Nombre:</label></b><br>
+         <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Nombre(s) Apeliido(s) Empleado " required><br>
+         <b><label for="CURP">CURP:</label></b><br>
+         <input class="entrada" type="text" id="curp" name="curp" placeholder="Ingrese CURP " required><br>
+         <b><label for="RFC">RFC:</label></b><br>
+         <input class="entrada" type="text" id="RFC" name="RFC" placeholder="Ingrese la RFC " required><br><br>
+         
+        
+         <b><Label for="entidad">Entidad:</Label></b><br>
+         
+            <select class="entrada" name="entidad" id="entidad">
+                          <option>--Selecione una Opcion--</option>
+                          <option value = "AS"> Aguascalientes </option>
+                          <option value = "BC"> Baja California </option>
+                          <option value = "BS"> Baja California Sur </option>
+                          <option value = "CC"> Campeche </option>
+                          <option value = "CS"> Chiapas </option>
+                          <option value = "CH"> Chihuahua </option>
+                          <option value = "DF"> Distrito Federal </option>
+                          <option value = "CL"> Coahuila </option>
+                          <option value = "CM"> Colima </option>
+                          <option value = "DG"> Durango </option>
+                          <option value = "MC"> Estado de México </option>
+                          <option value = "GT"> Guanajuato </option>
+                          <option value = "GR"> Guerrero </option>
+                          <option value = "HG"> Hidalgo </option>
+                          <option value = "JC"> Jalisco </option>
+                          <option value = "MN"> Michoacán </option>
+                          <option value = "MS"> Morelos </option>
+                          <option value = "NT"> Nayarit </option>
+                          <option value = "NL"> Nuevo León </option>
+                          <option value = "OC"> Oaxaca </option>
+                          <option value = "PL"> Puebla </option>
+                          <option value = "QT"> Querétaro </option>
+                          <option value = "QR"> Quintana Roo </option>
+                          <option value = "SP"> San Luis Potosí </option>
+                          <option value = "SL"> Sinaloa </option>
+                          <option value = "SR"> Sonora </option>
+                          <option value = "TC"> Tabasco </option>
+                          <option value = "TS"> Tamaulipas </option>
+                          <option value = "TL"> Tlaxcala </option>
+                          <option value = "VZ"> Veracruz </option>
+                          <option value = "YN"> Yucatán </option>
+                          <option value = "ZS"> Zacatecas </option>
+         </select><br><br>
+          
+        
+         
+             
+          <h3>DATOS LABORALES</h3> 
+          
+         <b><label for="numEmp">Numero De Empleado:</label></b>
+         <input class="entrada" type="text" id="numEmp" name="numEmp" placeholder="Ingrese Numero" required><br>
+         
+                        
+        <b><Label for="departamento">Departamento:</Label></b><br>
+        <select class="entrada" name="departamento" id="departamento"><br>
+         
+         
+                          <option>--Selecione una Opcion--</option>
+                          <option value = "RH"> Recursos Humanos </option>
+                          <option value = "DM"> Mantenimeinto </option>
+                          <option value = "DP"> Produccion </option>
+                          <option value = "CC"> Control De Calidad </option>
+                          <option value = "AE"> Area de exoportacion </option>
+                          
+            
+        </select><br>
+            
+        <b><label for="numSeg">Seguro social:</label></b><br>
+         <input class="entrada" type="text" id="numSeg" name="numSeg" placeholder="Ingrese Numero" required><br>
+         
+        <b><label for="salario">Salario diario integrado:</label></b><br>
+        <input class="entrada" type="text" id="salario" name="salario" placeholder="Ingrese Salario" required><br>
+         <b><label for="ceunta">Cuenta Banacaria:</label></b><br>
+        <input class="entrada" type="text" id="ceunta" name="cuenta" placeholder="Ingrese Numero De Cuenta" required><br>
+         
+         
+        <b><Label for="periodo">Periodicidad de Pago:</Label></b><br>
+         <select class="entrada" name="periodo" id="periodo"><br>
+         
+                          <option>--Selecione una Opcion--</option>
+                          <option value = "Q"> Quincenal </option>
+                          <option value = "S"> Semanal</option>
+         
+        </select><br>
+        <div class="botones">
+         <input id="enviar" type="submit" value="Agregar" class="btn">
+         <input id="borrar" type="reset" value="Borrar Datos" class="btn">
+        </div>        
+     </form>
+         
+    
+
+      
+   
+</body>
+</html>
